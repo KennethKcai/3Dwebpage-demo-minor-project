@@ -9,3 +9,40 @@ body {
 canvas {
   display: block;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* 使用绝对定位 */
+  top: 50%; /* 垂直中心 */
+  left: 50%; /* 水平中心 */
+  transform: translate(-50%, -50%); /* 偏移自身宽高的一半来完全居中 */
+  width: 100px; /* 宽度为整个视口宽度 */
+  height: 100px; /* 高度为整个视口高度 */
+}
+
+/* 设置按钮样式 */
+#rotate-button {
+  display: flex;
+  bottom: 200px;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 13px 23px;
+  border: 1px solid #222222;
+  transition: box-shadow 0.2s, transform 0.1s ease;
+  background-color: transparent; /* 按钮背景透明 */
+  color: #222222;
+}
+
+#rotate-button:hover {
+  border-color: #000000;
+  border: 2px solid #000000;
+
+}
