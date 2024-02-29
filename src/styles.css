@@ -14,15 +14,15 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute; /* 使用绝对定位 */
-  top: 50%; /* 垂直中心 */
-  left: 50%; /* 水平中心 */
-  transform: translate(-50%, -50%); /* 偏移自身宽高的一半来完全居中 */
-  width: 100px; /* 宽度为整个视口宽度 */
-  height: 100px; /* 高度为整个视口高度 */
+  position: absolute; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 100px; 
+  height: 100px; 
 }
 
-/* 设置按钮样式 */
+
 #rotate-button {
   display: flex;
   bottom: 200px;
@@ -37,7 +37,7 @@ canvas {
   padding: 13px 23px;
   border: 1px solid #222222;
   transition: box-shadow 0.2s, transform 0.1s ease;
-  background-color: transparent; /* 按钮背景透明 */
+  background-color: transparent; 
   color: #222222;
 }
 

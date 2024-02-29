@@ -41,6 +41,7 @@ spline
 			spline.setZoom(zoomValue);
 		});
 
+		//rotate button
 		const rotateButton = document.getElementById('rotate-button');
 		rotateButton.addEventListener('click', function() {
 		const obj = spline.findObjectByName('Sphere');
