@@ -9,7 +9,7 @@ const spline = new Application(canvas);
 let eventToggled = false;
 
 spline
-	.load('https://prod.spline.design/6hfXRpj2qWrs7CcG/scene.splinecode')
+	.load('https://prod.spline.design/k75GHjozd0DK5Nen/scene.splinecode')
 	.then(() => {
 		const obj = spline.findObjectByName('Rectangle 3');
 		console.log(obj); // Spline Object => { name: 'Cube', id: '7AF5EBC0-09BB-4720-B045-F478F8053AA4', position: {}, ... }
@@ -21,15 +21,12 @@ spline
 		const splineEvents = spline.getSplineEvents();
 		console.log('all events:', splineEvents);
 
-		const obj2 = spline.findObjectByName('Rectangle');
-		obj2.emitEvent('mouseDown');
-
 
 		//rotate button
 		const rotateButton = document.getElementById('transform-button');
 		rotateButton.addEventListener('click', function() {
 			if (eventToggled){
-				spline.emitEvent('mouseDown', 'Rectangle 3');
+				spline.emitEvent('mouseDown', '1');
 				eventToggled = false;
 			}else{
 				spline.emitEventReverse('mouseDown', 'Rectangle 3');
