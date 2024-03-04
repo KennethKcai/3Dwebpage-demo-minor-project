@@ -9,6 +9,6 @@
     "serve": "^13.0.2"
   },
   "dependencies": {
-    "@splinetool/runtime": "^1.0.54"
+    "@splinetool/runtime": "^1.0.55"
   }
 }
