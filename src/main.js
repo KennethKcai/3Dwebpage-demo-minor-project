@@ -6,6 +6,7 @@ const canvas = document.getElementById('canvas3d');
 // start the application and load the scene
 const spline = new Application(canvas);
 // 'https://prod.spline.design/HGAiXo5EKsHcv1mJ/scene.splinecode'
+let eventToggled = false;
 
 spline
 	.load('https://prod.spline.design/6hfXRpj2qWrs7CcG/scene.splinecode')
@@ -20,14 +21,21 @@ spline
 		const splineEvents = spline.getSplineEvents();
 		console.log('all events:', splineEvents);
 
+		const obj2 = spline.findObjectByName('Rectangle');
+		obj2.emitEvent('mouseDown');
+
+
 		//rotate button
-		const rotateButton = document.getElementById('rotate-button');
+		const rotateButton = document.getElementById('transform-button');
 		rotateButton.addEventListener('click', function() {
-		const obj = spline.findObjectByName('Rectangle 3');
-		
-		if (obj) {
-			obj.rotation.y += Math.PI / 4;
-		}
+			if (eventToggled){
+				spline.emitEvent('mouseDown', 'Rectangle 3');
+				eventToggled = false;
+			}else{
+				spline.emitEventReverse('mouseDown', 'Rectangle 3');
+				eventToggled = true;
+			}
+			
 		});
 
 	});
