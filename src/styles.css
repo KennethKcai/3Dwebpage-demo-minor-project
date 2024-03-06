@@ -6,6 +6,7 @@ html,
 body {
   height: 100%;
 	overflow: hidden;
+  font-family: 'Arial', sans-serif;
 }
 canvas {
   display: block;
@@ -51,4 +52,48 @@ canvas {
 #canvas3d{
   position: absolute;
   left: 20%;  
+}
+
+#text{
+  position: absolute;
+  z-index: 10;
+  max-width: 700px; /* Adjust the width as needed */
+  left: 80px;
+  top: 40px;
+  bottom: 40px;
+  height: auto;
+}
+
+h1 {
+  font-size: 3em; /* Adjust the size as needed */
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  color: #383F7D;
+}
+
+p {
+  font-size: 2em; /* Adjust the size as needed */
+  margin-bottom: 1em;
+  line-height: 1.5;
+}
+
+#paragraph {
+  color: #696CA7; /* Lighter text color for the paragraph */
+  position: absolute;
+  bottom: 80px;
+}
+
+#copyright {
+  font-size: 1em;
+  color: #696CA7; /* Even lighter text color */
+  position: absolute;
+  bottom: 20px;
+}
+
+.scene{
+  color: #696CA7;
+}
+
+#scene1{
+  color: #383F7D;
 }

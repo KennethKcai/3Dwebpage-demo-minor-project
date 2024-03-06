@@ -5,7 +5,6 @@ const canvas = document.getElementById('canvas3d');
 
 // start the application and load the scene
 const spline = new Application(canvas);
-// 'https://prod.spline.design/HGAiXo5EKsHcv1mJ/scene.splinecode'
 let eventToggled = false;
 
 spline
