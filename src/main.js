@@ -9,7 +9,7 @@ const spline = new Application(canvas);
 let eventToggled = false;
 
 spline
-	.load('https://prod.spline.design/k75GHjozd0DK5Nen/scene.splinecode')
+	.load('https://prod.spline.design/nTUzA-m9C6a22uwY/scene.splinecode')
 	.then(() => {
 		const obj = spline.findObjectByName('Rectangle 3');
 		console.log(obj); // Spline Object => { name: 'Cube', id: '7AF5EBC0-09BB-4720-B045-F478F8053AA4', position: {}, ... }
