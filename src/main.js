@@ -35,7 +35,7 @@ spline
   		}	
 		});
 		
-		
+		//scene buttons
   		const sceneButton1 = document.getElementById('scene1');
   		sceneButton1.addEventListener('click', function() {
 			
