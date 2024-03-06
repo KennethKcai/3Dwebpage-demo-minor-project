@@ -59,9 +59,13 @@ p {
 }
 
 #scene1{
-  color: #383F7D;
   margin: 0;
   padding: 0;
+}
+
+#scene1:hover{
+  color: #383F7D;
+  cursor: pointer;
 }
 
 #scene2{
@@ -69,11 +73,22 @@ p {
   padding: 0;
 }
 
-.perspective{
+#scene2:hover{
+  color: #383F7D;
+  cursor: pointer;
+}
+
+#perspective-button{
   position: fixed;
   right: 100px;
   bottom: 50px;
   z-index: 20;
   color: #383F7D;
-  font-size: 1.2em;
+  font-size: 1em;
+}
+
+#perspective-button:hover{
+  color: #383F7D;
+  cursor: pointer;
+  border-bottom: 2px solid #383F7D;
 }
