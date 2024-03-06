@@ -6,47 +6,10 @@ html,
 body {
   height: 100%;
 	overflow: hidden;
-  font-family: 'Arial', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 canvas {
   display: block;
-}
-
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute; 
-  top: 80%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  width: 100px; 
-  height: 100px; 
-}
-
-
-#transform-button {
-  display: flex;
-  bottom: 200px;
-  justify-content: center;
-  align-items: center;
-  outline: none;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 600;
-  border-radius: 8px;
-  padding: 13px 23px;
-  border: 1px solid #222222;
-  transition: box-shadow 0.2s, transform 0.1s ease;
-  background-color: transparent; 
-  color: #222222;
-}
-
-#transform-button:hover {
-  border-color: #000000;
-  border: 2px solid #000000;
-
 }
 
 #canvas3d{
@@ -92,8 +55,25 @@ p {
 
 .scene{
   color: #696CA7;
+
 }
 
 #scene1{
   color: #383F7D;
+  margin: 0;
+  padding: 0;
+}
+
+#scene2{
+  margin: 0;
+  padding: 0;
+}
+
+.perspective{
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  z-index: 20;
+  color: #383F7D;
+  font-size: 1.2em;
 }
