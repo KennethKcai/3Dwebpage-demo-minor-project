@@ -11,7 +11,7 @@ let eventToggled3 = false;
 
 
 spline
-	.load('https://prod.spline.design/nTUzA-m9C6a22uwY/scene.splinecode')
+	.load('https://prod.spline.design/vAAb1dyoihj8PFb5/scene.splinecode')
 	.then(() => {
 
 		//console log all objects and events
